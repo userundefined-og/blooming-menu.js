@@ -225,8 +225,8 @@
       '  top: 50%;' +
       '  -webkit-transform: translate(-50%, -50%);' +
       '  transform: translate(-50%, -50%);' +
-      '  width: 50px;' +
-      '  height: 50px;' +
+      '  width: ' + props.itemWidth + 'px;' +
+      '  height: ' + props.itemWidth + 'px;' +
       '  border-radius: 50%;' +
       '  -webkit-user-select: none;' +
       '  -moz-user-select: none;' +
@@ -238,8 +238,8 @@
       '.' + cssClassPrefix + CONTAINER_CSS_CLASS + ' {' +
       '  transition: box-shadow .28s cubic-bezier(.4,0,.2,1);' +
       '  box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);' +
-      '  width: 50px;' +
-      '  height: 50px;' +
+      '  width: ' + props.itemWidth + 'px;' +
+      '  height: ' + props.itemWidth + 'px;' +
       '  border-radius: 50%;' +
       '}'
 
@@ -249,8 +249,8 @@
     cssRules +=
       '.' + cssClassPrefix + MAIN_CSS_CLASS + ' {' +
       '  border-radius: 50%;' +
-      '  width: 50px;' +
-      '  height: 50px;' +
+      '  width: ' + props.itemWidth + 'px;' +
+      '  height: ' + props.itemWidth + 'px;' +
       '  position: absolute;' +
       '  z-index: 1;' +
       '  cursor: pointer;' +
@@ -302,8 +302,8 @@
       '    box-shadow .28s cubic-bezier(.4,0,.2,1),' +
       '    opacity .28s cubic-bezier(.4,0,.2,1)' +
       '  ;' +
-      '  width: 40px;' +
-      '  height: 40px;' +
+      '  width: ' + props.itemWidth * 4 / 5 + 'px;' +
+      '  height: ' + props.itemWidth * 4 / 5 + 'px;' +
       '  border-radius: 50%;' +
       '}'
 
